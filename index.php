@@ -3,35 +3,7 @@
 <META HTTP-EQUIV="refresh" CONTENT="3000; url=">
 </head>
 <body>
-<?
-/**
-	Kismet Log Files Parser
-
-README:
-The script will read all csv files in directory, parse them and 
-make HTML output. This piece of software IS VERY bugyy so use it just
-for your own needs. 
-
-If you find any bug please contact me by mail (maco_at_maco.sk) and I will
-try to debug the code ASAP. If you think of any other feature which is not already implemented, 
-drop me some lines and the same as above - I'll try to add the feature ASAP.
-
-watch http://www.maco.sk/ for updates
-
-INSTALLATION:
-- unpack
-- point $dir var to the .csv Kismet log file
-- directory HAS TO BE READABLE AND EXECUTABLE for http server +
-	the same for the files - it is recomended to copy log files to 'data' directory
-	under kismet2html directory
-- done
-
-- you can rewrite $dir variable in URL by settinf $ddir variable such as:
-
-http://www.maco.sk/kismet2html/index.php?ddir=/var/log/kismet/
-
-**/
-
+<?php
 //the only variable to edit ($dir) WITH leading slash
 $dir = "../data/";
 
